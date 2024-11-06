@@ -66,139 +66,112 @@
         <button class="tablinks" onclick="openPlatform(event, 'Windows')">Windows</button>
         <button class="tablinks" onclick="openPlatform(event, 'iOS_MacOS')">iPhone/Mac OS</button>
         <button class="tablinks" onclick="openPlatform(event, 'Android')">Android</button>
+        <button class="tablinks" onclick="openPlatform(event, 'Telegram')">Telegram Bot</button>
     </div>
 
     <div id="Windows" class="tabcontent">
-        <h2>Настройка VPN для Windows (v2rayN)</h2>
-        <div class="step">
-            <h3>1. Загрузка v2rayN</h3>
-            <p>Скачайте последнюю версию <a href="https://github.com/2dust/v2rayN/releases" target="_blank">v2rayN</a>.</p>
-            <img src="./images/windows/1.png" alt="Страница загрузки v2rayN">
-        </div>
-        <div class="step">
-            <h3>2. Установка v2rayN</h3>
-            <p>Распакуйте архив v2rayN.zip и запустите v2rayN.exe из распакованной папки.</p>
-            <p>Если появится окно с предложением скачать .NET Runtime:</p>
-            <ol>
-                <li>Нажмите "Download it now"</li>
-                <li>Установите скачанный файл windowsdesktop-runtime-8.0.10-win-x64.exe</li>
-                <li>Перезапустите v2rayN.exe</li>
-            </ol>
-            <img src="./images/windows/3.png" alt="Окно установки .NET Runtime">
-            <img src="./images/windows/4.png" alt="Окно установки .NET Runtime">
-        </div>
-        <div class="step">
-            <h3>3. Настройка языка интерфейса</h3>
-            <p>Смените язык интерфейса на русский или английский:</p>
-            <ol>
-                <li>Нажмите на три точки в верхнем правом углу</li>
-                <li>Выберите "en" (английский) или "ru" (русский)</li>
-                <li>Перезапустите приложение</li>
-            </ol>
-            <img src="./images/windows/6.png" alt="Меню выбора языка v2rayN">
-            <img src="./images/windows/7.png" alt="Закрытие v2rayN">
-            <img src="./images/windows/8.png" alt="Закрытие v2rayN">
-        </div>
-        <div class="step">
-            <h3>4. Импорт конфигурации VPN</h3>
-            <ol>
-                <li>Скопируйте ссылку, предоставленную администратором VPN</li>
-                <li>В v2rayN выберите: Сервера -> Импорт массива URL из буфера обмена</li>
-                <li>Обновите подписку: Группа подписки -> Обновить подписку с прокси</li>
-            </ol>
-            <img src="./images/windows/9.png" alt="Импорт конфигурации VPN в v2rayN">
-            <img src="./images/windows/10.png" alt="Импорт конфигурации VPN в v2rayN">
-        </div>
-        <div class="step">
-            <h3>5. Установка Xray</h3>
-            <ol>
-                <li>Перейдите на страницу <a href="https://github.com/XTLS/Xray-core/releases" target="_blank">Xray-core releases</a></li>
-                <li>Скачайте Xray-windows-64.zip</li>
-                <li>Распакуйте архив и скопируйте wxray.exe и xray.exe в папку v2rayN\bin\Xray</li>
-            </ol>
-            <img src="./images/windows/11.png" alt="Страница загрузки Xray">
-            <img src="./images/windows/12.png" alt="Страница загрузки Xray">
-        </div>
-        <div class="step">
-            <h3>6. Финальная настройка v2rayN</h3>
-            <ol>
-                <li>Установите системный прокси</li>
-                <li>Настройте маршрутизацию</li>
-                <li>Активируйте режим VPN</li>
-            </ol>
-            <img src="./images/windows/15.png" alt="Окно настроек v2rayN">
-        </div>
-    </div>
-
-    <div id="iOS_MacOS" class="tabcontent">
-        <h2>Настройка VPN для iPhone/Mac OS</h2>
+        <h2>Настройка VPN для Windows</h2>
         <div class="step">
             <h3>1. Установка приложения</h3>
-            <p>Установите приложение Streisand: <a href="https://apps.apple.com/ge/app/streisand/id6450534064" target="_blank">https://apps.apple.com/ge/app/streisand/id6450534064</a></p>
+            <p>Установите приложение Hiddify: <a href="https://apps.microsoft.com/detail/9pdfnl3qv2s5?hl=ru-ru&gl=US" target="_blank">https://apps.microsoft.com/detail/9pdfnl3qv2s5</a></p>
         </div>
         <div class="step">
             <h3>2. Копирование ссылки на подписку</h3>
-            <p>Скопируйте ссылку на подписку, которую вам прислал администратор</p>
+            <p>Скопируйте ссылку на подписку, которую вам прислал бот-администратор</p>
         </div>
         <div class="step">
             <h3>3. Добавление подписки</h3>
             <ol>
-                <li>Откройте приложение Streisand</li>
+                <li>Откройте приложение Hiddify</li>
                 <li>Нажмите "+" в правом верхнем углу</li>
                 <li>Выберите в появившемся меню пункт "Добавить из буфера"</li>
             </ol>
-            <img src="./images/ios/i1.png" alt="Интерфейс добавления подписки в Streisand">
-            <img src="./images/ios/i2.png" alt="Интерфейс добавления подписки в Streisand">
+            
         </div>
+       
         <div class="step">
             <h3>4. Подключение VPN</h3>
-            <ol>
-                <li>Нажмите на иконку подключения</li>
-                <li>Разрешите добавление профиля VPN</li>
-                <li>Введите пароль от вашего устройства для подтверждения</li>
-            </ol>
-            <img src="./images/ios/i3.png" alt="Процесс подключения VPN в Streisand">
-            <img src="./images/ios/i4.png" alt="Процесс подключения VPN в Streisand">
-            <img src="./images/ios/i5.png" alt="Процесс подключения VPN в Streisand">
+                <p>Нажмите на иконку подключения</p>
         </div>
         <div class="step">
             <h3>5. Проверка срока действия подписки</h3>
-            <p>В нижней части экрана вы увидите количество дней, оставшихся в подписке, а также количество израсходованного трафика.</p>
-            <img src="./images/ios/i6.png" alt="Экран статуса подписки в Streisand">
+            <p>В верхней части экрана вы увидите количество дней, оставшихся в подписке, а также количество израсходованного трафика.</p>
+        </div>
+</div>
+    <div id="iOS_MacOS" class="tabcontent">
+        <h2>Настройка VPN для iPhone/Mac OS</h2>
+        <img src="./videos/ios-hiddify.gif" alt="Видеоинструкция по настройке" style="max-height: 40rem; width: auto;">
+        <div class="step">
+            <h3>1. Установка приложения</h3>
+            <p>Установите приложение Hiddify: <a href="https://apps.apple.com/app/id6596777532" target="_blank">https://apps.apple.com/app/id6596777532</a></p>
+        </div>
+        <div class="step">
+            <h3>2. Копирование ссылки на подписку</h3>
+            <p>Скопируйте ссылку на подписку, которую вам прислал бот-администратор</p>
+        </div>
+        <div class="step">
+            <h3>3. Добавление подписки</h3>
+            <ol>
+                <li>Откройте приложение Hiddify</li>
+                <li>Нажмите "+" в правом верхнем углу</li>
+                <li>Выберите в появившемся меню пункт "Добавить из буфера"</li>
+            </ol>
+            
+        </div>
+       
+        <div class="step">
+            <h3>4. Подключение VPN</h3>
+                <p>Нажмите на иконку подключения</p>
+        </div>
+        <div class="step">
+            <h3>5. Проверка срока действия подписки</h3>
+            <p>В верхней части экрана вы увидите количество дней, оставшихся в подписке, а также количество израсходованного трафика.</p>
         </div>
     </div>
 
+
     <div id="Android" class="tabcontent">
         <h2>Настройка VPN для Android</h2>
+        <img src="./videos/android-hiddify.gif" alt="Видеоинструкция по настройке" style="max-height: 40rem; width: auto;">
         <div class="step">
             <h3>1. Установка приложения</h3>
-            <p>Установите приложение v2rayNG: <a href="https://play.google.com/store/apps/details?id=com.v2ray.ang" target="_blank">https://play.google.com/store/apps/details?id=com.v2ray.ang</a></p>
+            <p>Установите приложение Hiddify: <a href="https://play.google.com/store/apps/details?id=app.hiddify.com" target="_blank">https://play.google.com/store/apps/details?id=app.hiddify.com</a></p>
         </div>
         <div class="step">
-            <h3>2. Добавление подключения</h3>
+            <h3>2. Копирование ссылки на подписку</h3>
+            <p>Скопируйте ссылку на подписку, которую вам прислал бот-администратор</p>
+        </div>
+        <div class="step">
+            <h3>3. Добавление подписки</h3>
             <ol>
-                <li>Откройте приложение v2rayNG</li>
+                <li>Откройте приложение Hiddify</li>
                 <li>Нажмите "+" в правом верхнем углу</li>
-                <li>Выберите в появившемся меню пункт сканирования QR Кода</li>
+                <li>Выберите в появившемся меню пункт "Добавить из буфера"</li>
             </ol>
-            <img src="./images/android/1.jpeg" alt="Интерфейс добавления подключения в v2rayNG">
-            <img src="./images/android/2.jpeg" alt="Интерфейс добавления подключения в v2rayNG">
-            <img src="./images/android/3.jpeg" alt="Интерфейс добавления подключения в v2rayNG">
+            
         </div>
         <div class="step">
-            <h3>3. Подключение VPN</h3>
-            <ol>
-                <li>Нажмите на иконку подключения</li>
-                <li>Дождитесь запуска службы VPN</li>
-            </ol>
-            <img src="./images/android/4.jpeg" alt="Процесс подключения VPN в v2rayNG">
+            <h3>4. Подключение VPN</h3>
+                <p>Нажмите на иконку подключения</p>
         </div>
         <div class="step">
-            <h3>4. Проверка статуса подключения и отключение VPN</h3>
-            <p>В нижней части экрана вы увидите cтатус подключения и кнопку отключения.</p>
-            <img src="./images/android/5.jpeg" alt="Экран статуса подписки в v2rayNG">
+            <h3>5. Проверка срока действия подписки</h3>
+            <p>В верхней части экрана вы увидите количество дней, оставшихся в подписке, а также количество израсходованного трафика.</p>
         </div>
     </div>
+
+    <div id="Telegram" class="tabcontent">
+        <h2>Телеграм бот</h2>
+        <h5>Для вашего удобства запущен телеграм бот, который присылает уведомление об окончании срока действия подписки, также вы можете продлять срок действия самостоятельно.</h5>
+        <div class="step">
+            <h3>Подключение к боту </h3>
+            <ol>
+                <li>Перейдите по ссылке: <a href="https://t.me/securize_online_bot" target="_blank">@securize_online_bot</a></li>
+                <li>Отправьте боту команду /start для выполнения регистрации.</li>
+            </ol>
+        </div>
+    </div>
+
     <script>
     function openPlatform(evt, platformName) {
         var i, tabcontent, tablinks;
